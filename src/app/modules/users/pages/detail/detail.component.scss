@@ -1,0 +1,16 @@
+.page-header {
+  position: relative;
+
+  .back-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    cursor: pointer;
+  }
+}
+
+.page-content {
+  text-align: center;
+}
