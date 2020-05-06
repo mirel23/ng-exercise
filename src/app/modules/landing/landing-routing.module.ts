@@ -1,11 +1,11 @@
 import { Route, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { LandingComponent } from './pages/landing/landing.component';
+import { LandingPageComponent } from './pages/landing/landing.component';
 
 const routes: Route[] = [
   {
     path: '',
-    component: LandingComponent,
+    component: LandingPageComponent,
   }
 ];
 

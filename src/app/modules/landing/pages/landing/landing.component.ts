@@ -3,11 +3,11 @@ import { AppService } from '../../../../core/services/app/app.service';
 import { Task } from 'src/app/core/mocks/tasks/tasks';
 
 @Component({
-  selector: 'ng-e-landing',
+  selector: 'ng-e-landing-page',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss']
 })
-export class LandingComponent implements OnInit {
+export class LandingPageComponent implements OnInit {
   exerciseTasks: Array<Task>;
   constructor(private appService: AppService) {}
 
