@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { DomSanitizer } from "@angular/platform-browser";
-import tasks, { Task } from "../tasks/tasks";
+import tasks, { Task } from '../../mocks/tasks/tasks';
 
 @Injectable()
 export class AppService {
