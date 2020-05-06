@@ -6,11 +6,12 @@ import { AppHeaderComponent } from './components/app-header/app-header.component
 import { AppContentComponent } from './components/app-content/app-content.component';
 import { AppService } from './services/app/app.service';
 import { ApiCallService } from './services/api-call/api-call.service';
+import { UsersProxyService } from './proxies/users/users-proxy.service';
 
 @NgModule({
   imports: [CommonModule, HttpClientModule, RouterModule],
   declarations: [AppHeaderComponent, AppContentComponent],
   exports: [AppHeaderComponent, AppContentComponent],
-  providers: [AppService, ApiCallService]
+  providers: [AppService, ApiCallService, UsersProxyService]
 })
 export class CoreModule {}
