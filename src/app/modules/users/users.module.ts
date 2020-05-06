@@ -6,6 +6,7 @@ import { UsersListPageComponent } from './pages/list/list.component';
 import { UsersLayoutComponent } from './layouts/users/users-layout.component';
 import { UsersListResolver } from '../../core/resolvers/users-list/users-list.resolver';
 import { UsersListComponent } from './components/users-list/users-list.component';
+import { UserDetailComponent } from './components/user-detail/user-detail.component';
 
 @NgModule({
   imports: [
@@ -16,10 +17,12 @@ import { UsersListComponent } from './components/users-list/users-list.component
   declarations: [
     UsersLayoutComponent,
     UsersListPageComponent,
-    UsersListComponent
+    UsersListComponent,
+    UserDetailComponent,
   ],
   exports: [
-    UsersListComponent
+    UsersListComponent,
+    UserDetailComponent,
   ],
   providers: [
     UsersListResolver,
