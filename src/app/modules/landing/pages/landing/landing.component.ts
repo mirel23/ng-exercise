@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../../../../core/services/app/app.service';
-import { Task } from 'src/app/core/mocks/tasks/tasks';
+import { Task } from '../../../../core/mocks/tasks/tasks';
 
 @Component({
   selector: 'ng-e-landing-page',

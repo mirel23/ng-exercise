@@ -14,3 +14,12 @@
 body {
   font-family: Roboto, sans-serif;
 }
+
+.app-container {
+  max-width: 960px;
+  margin: 0 auto;
+
+  .page-header {
+    text-align: center;
+  }
+}
