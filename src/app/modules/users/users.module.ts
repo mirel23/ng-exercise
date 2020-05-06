@@ -5,6 +5,7 @@ import { UsersRoutingModule } from './users-routing.module';
 import { UsersListPageComponent } from './pages/list/list.component';
 import { UsersLayoutComponent } from './layouts/users/users-layout.component';
 import { UsersListResolver } from '../../core/resolvers/users-list/users-list.resolver';
+import { UsersListComponent } from './components/users-list/users-list.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,10 @@ import { UsersListResolver } from '../../core/resolvers/users-list/users-list.re
   declarations: [
     UsersLayoutComponent,
     UsersListPageComponent,
+    UsersListComponent
+  ],
+  exports: [
+    UsersListComponent
   ],
   providers: [
     UsersListResolver,

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { User } from '../../../../shared/models/user.model';
 
 
 @Component({
@@ -7,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class UsersListPageComponent {
-  constructor() {}
+  users: User[];
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.users = this.route.snapshot.data.users;
+  }
 }
