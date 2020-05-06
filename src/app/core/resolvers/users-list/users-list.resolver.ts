@@ -5,6 +5,7 @@ import { map } from 'rxjs/operators';
 import { ApiCallService } from '../../services/api-call/api-call.service';
 import { User } from '../../../shared/models/user.model';
 import { ApiUsers } from '../../../shared/models/api-users.model';
+import { REQ_RES_API } from '../../../configs/req-res-endpoints.config';
 
 /**
  ** Resolves the users list before rendering a route.
@@ -17,7 +18,7 @@ export class UsersListResolver implements Resolve<User[]> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<User[]> {
-    return this.apiCallService.get<ApiUsers>('https://reqres.in/api/users')
+    return this.apiCallService.get<ApiUsers>(REQ_RES_API.getUsers)
       .pipe(
         map((response) => {
           return response.data.map((user) => {
