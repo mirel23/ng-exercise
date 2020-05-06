@@ -7,11 +7,12 @@ import { AppContentComponent } from './components/app-content/app-content.compon
 import { AppService } from './services/app/app.service';
 import { ApiCallService } from './services/api-call/api-call.service';
 import { UsersProxyService } from './proxies/users/users-proxy.service';
+import { AuthService } from './services/auth/auth.service';
 
 @NgModule({
   imports: [CommonModule, HttpClientModule, RouterModule],
   declarations: [AppHeaderComponent, AppContentComponent],
   exports: [AppHeaderComponent, AppContentComponent],
-  providers: [AppService, ApiCallService, UsersProxyService]
+  providers: [AppService, ApiCallService, AuthService, UsersProxyService]
 })
 export class CoreModule {}
