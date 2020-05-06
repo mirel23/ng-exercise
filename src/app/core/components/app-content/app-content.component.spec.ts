@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppContentComponent } from './app-content.component';
+import { AuthService } from '../../services/auth/auth.service';
 
 describe('AppContentComponent', () => {
   let component: AppContentComponent;
@@ -8,6 +9,7 @@ describe('AppContentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      providers: [AuthService],
       declarations: [AppContentComponent]
     }).compileComponents();
   }));
