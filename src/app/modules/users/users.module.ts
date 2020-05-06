@@ -4,6 +4,7 @@ import { CoreModule } from '../../core/core.module';
 import { UsersRoutingModule } from './users-routing.module';
 import { UsersListPageComponent } from './pages/list/list.component';
 import { UsersLayoutComponent } from './layouts/users/users-layout.component';
+import { UsersListResolver } from '../../core/resolvers/users-list/users-list.resolver';
 
 @NgModule({
   imports: [
@@ -15,5 +16,8 @@ import { UsersLayoutComponent } from './layouts/users/users-layout.component';
     UsersLayoutComponent,
     UsersListPageComponent,
   ],
+  providers: [
+    UsersListResolver,
+  ]
 })
 export class UsersModule {}
